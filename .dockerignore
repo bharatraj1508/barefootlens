@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.gitignore
+Dockerfile
+.dockerignore
+docker-compose.yml
+npm-debug.log*
+.DS_Store
+**/.DS_Store
+.env*.local
+README.md
+
+# Original source assets — the site serves everything it needs from public/
+data
