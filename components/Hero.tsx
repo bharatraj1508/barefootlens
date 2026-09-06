@@ -47,25 +47,10 @@ export default function Hero() {
         />
       </video>
 
-      {/* Letterbox bars — sweep in thick, settle to a thin cinematic frame */}
-      <motion.div
-        aria-hidden
-        className="absolute inset-x-0 top-0 z-20 bg-ink"
-        initial={{ height: "18vh" }}
-        animate={{ height: "3.2vh" }}
-        transition={{ duration: 1.1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-      />
-      <motion.div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 z-20 bg-ink"
-        initial={{ height: "18vh" }}
-        animate={{ height: "3.2vh" }}
-        transition={{ duration: 1.1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-      />
       {/* Light tint for text legibility — keeps the video visible edge to edge */}
-      <div className="absolute inset-0 bg-black/25" />
-      {/* Dark only at the very top (nav) and bottom (scroll icon + transition) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-transparent to-ink/85" />
+      <div className="absolute inset-0 bg-black/20" />
+      {/* Subtle fade only at the very top (nav) and bottom (scroll icon) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink/45" />
 
       <div className="relative z-10 mx-auto max-w-wide px-5 text-center sm:px-8">
         <motion.p
