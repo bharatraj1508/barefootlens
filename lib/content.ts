@@ -74,7 +74,10 @@ export const projects: Project[] = [
       { role: "Editor", name: "R.S. Mehra" },
       { role: "Music", name: "Hardaat Singh" },
       { role: "Line Producer", name: "Karamjit Singh" },
-      { role: "Produced By", name: "Saurabh Mehra, Nirmal Jeena & Pankaj Kharkwal" },
+      {
+        role: "Produced By",
+        name: "Saurabh Mehra, Nirmal Jeena & Pankaj Kharkwal",
+      },
     ],
     gallery: [
       "/projects/antraal/gallery/still-1.png",
@@ -136,7 +139,6 @@ export const team: Member[] = [
     name: "Aljinder Mangat",
     role: "Founder · Filmmaker",
     bio: "Aljinder Mangat is a filmmaker and director with formal training from the Tisch School of the Arts. His work is rooted in visual storytelling, character-driven narratives and an interest in bringing culturally relevant stories to the screen. As the director at Barefoot Lens, he leads the creative vision of the company’s film projects, including the upcoming Punjabi feature Main V Kise Di Dhee Aa.",
-    photo: "/team/aljinder-mangat.jpg",
   },
   {
     name: "Rahul Shukla",
@@ -150,7 +152,7 @@ export const team: Member[] = [
     name: "Vaneet",
     role: "Visual Graphics · Music Director · Lyricist",
     bio: "Vaneet is a visual creative with a background in Film Graphics, having completed his graduation in Mumbai. His work brings together visual design and filmmaking, with an emphasis on creating strong visual identities for screen projects. At Barefoot Lens, he contributes to visual graphics, handles social media and initial location scouting for Main V Kise Di Dhee Aa.",
-    photo: "/team/vaneet.jpg",
+    photo: "/team/aljinder-mangat.jpg",
     email: "vaneet.raj10@gmail.com",
     instagram: "vaneet.raj",
   },
@@ -160,5 +162,6 @@ export const team: Member[] = [
     bio: "Bikram is part of the production and business team at Barefoot Lens, contributing to the practical and organizational side of the company’s projects. His role focuses on supporting production planning, coordination and the business aspects involved in bringing independent film projects from development toward production.",
     email: "vickymangat608@gmail.com",
     instagram: "imbikramjeet",
+    photo: "/team/vaneet.jpg",
   },
 ];
