@@ -2,12 +2,15 @@ services:
   web:
     build: .
     image: barefoot-lens
-    # Host:container port both driven by PORT (default 3000). Override in .env
-    # or inline: `PORT=8080 docker compose up`.
-    ports:
-      - "${PORT:-3000}:${PORT:-3000}"
+
+    env_file:
+      - .env
+
     environment:
-      - PORT=${PORT:-3000}
       - HOSTNAME=0.0.0.0
       - NODE_ENV=production
+
+    ports:
+      - "127.0.0.1:${PORT:-3000}:${PORT:-3000}"
+
     restart: unless-stopped
